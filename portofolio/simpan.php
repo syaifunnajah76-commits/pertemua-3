@@ -11,9 +11,3 @@ $gambar = $_POST['gambar'];
 $simpan = mysqli_query($koneksi, "INSERT INTO tb_karya (judul, deskripsi, gambar) VALUES ('$judul', '$deskripsi', '$gambar')");
 
 // 3. Cek hasil & arahkan kembali ke index
-if($simpan) {
-    header("location:index.php");
-} else {
-    echo "Gagal menyimpan data!";
-}
-?>
