@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Tambah Karya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white p-5">
+    <div class="container">
+        <div class="card bg-secondary text-white p-4 border-info mx-auto" style="max-width: 600px;">
+            <h3 class="text-info mb-4">Tambah Karya Baru</h3>
+            
+            <form action="simpan.php" method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Judul Proyek</label>
+                    <input type="text" name="judul" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Deskripsi Singkat</label>
+                    <textarea name="deskripsi" class="form-control" rows="4" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Link URL Gambar</label>
+                    <input type="text" name="gambar" class="form-control" placeholder="https://...">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Simpan Data</button>
+                <a href="index.php" class="btn btn-outline-light w-100 mt-2">Batal</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
